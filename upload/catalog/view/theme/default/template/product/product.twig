@@ -131,34 +131,34 @@
             {% endif %}
             <li>{{ text_stock }} {{ stock }}</li>
           </ul>
-          {% if price %}
-          <ul class="list-unstyled">
-            {% if not special %}
-            <li>
-              <h2>{{ price }}</h2>
-            </li>
-            {% else %}
-            <li><span style="text-decoration: line-through;">{{ price }}</span></li>
-            <li>
-              <h2>{{ special }}</h2>
-            </li>
-            {% endif %}
-            {% if tax %}
-            <li>{{ text_tax }} {{ tax }}</li>
-            {% endif %}
-            {% if points %}
-            <li>{{ text_points }} {{ points }}</li>
-            {% endif %}
-            {% if discounts %}
-            <li>
-              <hr>
-            </li>
-            {% for discount in discounts %}
-            <li>{{ discount.quantity }}{{ text_discount }}{{ discount.price }}</li>
-            {% endfor %}
-            {% endif %}
-          </ul>
-          {% endif %}
+{#          {% if price %}#}
+{#          <ul class="list-unstyled">#}
+{#            {% if not special %}#}
+{#            <li>#}
+{#              <h2>{{ price }}</h2>#}
+{#            </li>#}
+{#            {% else %}#}
+{#            <li><span style="text-decoration: line-through;">{{ price }}</span></li>#}
+{#            <li>#}
+{#              <h2>{{ special }}</h2>#}
+{#            </li>#}
+{#            {% endif %}#}
+{#            {% if tax %}#}
+{#            <li>{{ text_tax }} {{ tax }}</li>#}
+{#            {% endif %}#}
+{#            {% if points %}#}
+{#            <li>{{ text_points }} {{ points }}</li>#}
+{#            {% endif %}#}
+{#            {% if discounts %}#}
+{#            <li>#}
+{#              <hr>#}
+{#            </li>#}
+{#            {% for discount in discounts %}#}
+{#            <li>{{ discount.quantity }}{{ text_discount }}{{ discount.price }}</li>#}
+{#            {% endfor %}#}
+{#            {% endif %}#}
+{#          </ul>#}
+{#          {% endif %}#}
           <div id="product"> {% if options %}
             <hr>
             <h3>{{ text_option }}</h3>
@@ -170,9 +170,9 @@
                 <option value="">{{ text_select }}</option>
                 {% for option_value in option.product_option_value %}
                 <option value="{{ option_value.product_option_value_id }}">{{ option_value.name }}
-                {% if option_value.price %}
-                ({{ option_value.price_prefix }}{{ option_value.price }})
-                {% endif %} </option>
+{#                {% if option_value.price %}#}
+{#                ({{ option_value.price_prefix }}{{ option_value.price }})#}
+{#                {% endif %} </option>#}
                 {% endfor %}
               </select>
             </div>
@@ -186,29 +186,29 @@
                     <input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" />
                     {% if option_value.image %} <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %} {{ option_value.price_prefix }} {{ option_value.price }} {% endif %}" class="img-thumbnail" /> {% endif %}                  
                     {{ option_value.name }}
-                    {% if option_value.price %}
-                    ({{ option_value.price_prefix }}{{ option_value.price }})
-                    {% endif %} </label>
+{#                    {% if option_value.price %}#}
+{#                    ({{ option_value.price_prefix }}{{ option_value.price }})#}
+{#                    {% endif %} </label>#}
                 </div>
                 {% endfor %} </div>
             </div>
             {% endif %}
-            {% if option.type == 'checkbox' %}
-            <div class="form-group{% if option.required %} required {% endif %}">
-              <label class="control-label">{{ option.name }}</label>
-              <div id="input-option{{ option.product_option_id }}"> {% for option_value in option.product_option_value %}
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" name="option[{{ option.product_option_id }}][]" value="{{ option_value.product_option_value_id }}" />
-                    {% if option_value.image %} <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %} {{ option_value.price_prefix }} {{ option_value.price }} {% endif %}" class="img-thumbnail" /> {% endif %}
-                    {{ option_value.name }}
-                    {% if option_value.price %}
-                    ({{ option_value.price_prefix }}{{ option_value.price }})
-                    {% endif %} </label>
-                </div>
-                {% endfor %} </div>
-            </div>
-            {% endif %}
+{#            {% if option.type == 'checkbox' %}#}
+{#            <div class="form-group{% if option.required %} required {% endif %}">#}
+{#              <label class="control-label">{{ option.name }}</label>#}
+{#              <div id="input-option{{ option.product_option_id }}"> {% for option_value in option.product_option_value %}#}
+{#                <div class="checkbox">#}
+{#                  <label>#}
+{#                    <input type="checkbox" name="option[{{ option.product_option_id }}][]" value="{{ option_value.product_option_value_id }}" />#}
+{#                    {% if option_value.image %} <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %} {{ option_value.price_prefix }} {{ option_value.price }} {% endif %}" class="img-thumbnail" /> {% endif %}#}
+{#                    {{ option_value.name }}#}
+{#                    {% if option_value.price %}#}
+{#                    ({{ option_value.price_prefix }}{{ option_value.price }})#}
+{#                    {% endif %} </label>#}
+{#                </div>#}
+{#                {% endfor %} </div>#}
+{#            </div>#}
+{#            {% endif %}#}
             {% if option.type == 'text' %}
             <div class="form-group{% if option.required %} required {% endif %}">
               <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
@@ -318,12 +318,12 @@
                 {% if product.rating < j %} <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span> {% else %} <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span> {% endif %}
                 {% endfor %} </div>
               {% endif %}
-              {% if product.price %}
-              <p class="price"> {% if not product.special %}
-                {{ product.price }}
-                {% else %} <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span> {% endif %}
-                {% if product.tax %} <span class="price-tax">{{ text_tax }} {{ product.tax }}</span> {% endif %} </p>
-              {% endif %} </div>
+{#              {% if product.price %}#}
+{#              <p class="price"> {% if not product.special %}#}
+{#                {{ product.price }}#}
+{#                {% else %} <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span> {% endif %}#}
+{#                {% if product.tax %} <span class="price-tax">{{ text_tax }} {{ product.tax }}</span> {% endif %} </p>#}
+{#              {% endif %} </div>#}
             <div class="button-group">
               <button type="button" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span> <i class="fa fa-shopping-cart"></i></button>
               <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i></button>

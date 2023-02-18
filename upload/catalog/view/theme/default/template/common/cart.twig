@@ -14,7 +14,7 @@
             {% if product.recurring %} <br />
             - <small>{{ text_recurring }} {{ product.recurring }}</small> {% endif %}</td>
           <td class="text-right">x {{ product.quantity }}</td>
-          <td class="text-right">{{ product.total }}</td>
+{#          <td class="text-right">{{ product.total }}</td>#}
           <td class="text-center"><button type="button" onclick="cart.remove('{{ product.cart_id }}');" title="{{ button_remove }}" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
         </tr>
         {% endfor %}
@@ -31,14 +31,14 @@
     </li>
     <li>
       <div>
-        <table class="table table-bordered">
-          {% for total in totals %}
-          <tr>
-            <td class="text-right"><strong>{{ total.title }}</strong></td>
-            <td class="text-right">{{ total.text }}</td>
-          </tr>
-          {% endfor %}
-        </table>
+{#        <table class="table table-bordered">#}
+{#          {% for total in totals %}#}
+{#          <tr>#}
+{#            <td class="text-right"><strong>{{ total.title }}</strong></td>#}
+{#            <td class="text-right">{{ total.text }}</td>#}
+{#          </tr>#}
+{#          {% endfor %}#}
+{#        </table>#}
         <p class="text-right"><a href="{{ cart }}"><strong><i class="fa fa-shopping-cart"></i> {{ text_cart }}</strong></a>&nbsp;&nbsp;&nbsp;<a href="{{ checkout }}"><strong><i class="fa fa-share"></i> {{ text_checkout }}</strong></a></p>
       </div>
     </li>
