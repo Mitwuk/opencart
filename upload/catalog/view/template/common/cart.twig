@@ -21,7 +21,7 @@
 
               </td>
               <td class="text-end">x {{ product.quantity }}</td>
-              <td class="text-end">{{ product.total }}</td>
+              {#              <td class="text-end">{{ product.total }}</td>#}
               <td class="text-end">
                 <form action="{{ product_remove }}" method="post" data-oc-toggle="ajax" data-oc-load="{{ list }}" data-oc-target="#header-cart">
                   <input type="hidden" name="key" value="{{ product.cart_id }}">
@@ -46,14 +46,14 @@
           {% endfor %}
         </table>
         <div>
-          <table class="table table-sm table-bordered">
-            {% for total in totals %}
-              <tr>
-                <td class="text-end"><strong>{{ total.title }}</strong></td>
-                <td class="text-end">{{ total.text }}</td>
-              </tr>
-            {% endfor %}
-          </table>
+          {#          <table class="table table-sm table-bordered">#}
+          {#            {% for total in totals %}#}
+          {#              <tr>#}
+          {#                <td class="text-end"><strong>{{ total.title }}</strong></td>#}
+          {#                <td class="text-end">{{ total.text }}</td>#}
+          {#              </tr>#}
+          {#            {% endfor %}#}
+          {#          </table>#}
           <p class="text-end"><a href="{{ cart }}"><strong><i class="fa-solid fa-cart-shopping"></i> {{ text_cart }}</strong></a>&nbsp;&nbsp;&nbsp;<a href="{{ checkout }}"><strong><i class="fa-solid fa-share"></i> {{ text_checkout }}</strong></a></p>
         </div>
       </li>

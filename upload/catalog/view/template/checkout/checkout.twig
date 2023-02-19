@@ -11,23 +11,49 @@
       <div class="row">
         {% if register or payment_address or shipping_address %}
           <div class="col-md-7 mb-3">
-            {% if register %}
-              <div id="checkout-register">{{ register }}</div>
-            {% endif %}
-            {% if payment_address %}
-              <div id="checkout-payment-address">{{ payment_address }}</div>
-            {% endif %}
-            {% if shipping_address %}
-              <div id="checkout-shipping-address">{{ shipping_address }}</div>
-            {% endif %}
+            <div class="row row-cols-1 row-cols-md-2">
+
+              <div class="col mb-3 required">
+                <label for="input-name" class="form-label">Your Name</label>
+                <input type="text" name="name" value="{{ name }}" placeholder="{{ entry_name }}" id="input-name" class="form-control"/>
+                <div id="error-name" class="invalid-feedback"></div>
+              </div>
+
+              <div class="col mb-3">
+                <label for="input-company-name" class="form-label">Company Name</label>
+                <input type="text" name="companyname" value="{{ companyname }}" placeholder="{{ entry_companyname }}" id="input-company-name" class="form-control"/>
+                <div id="error-company-name" class="invalid-feedback"></div>
+              </div>
+
+              <div class="col mb-3 required">
+                <label for="input-email-address" class="form-label">E-Mail Address</label>
+                <input type="text" name="email_address" value="{{ email_address }}" placeholder="{{ entry_email_address }}" id="input-email-address" class="form-control"/>
+                <div id="error-email-address" class="invalid-feedback"></div>
+              </div>
+
+              <div class="col mb-3 required">
+                <label for="input-contact-number" class="form-label">Contact Number</label>
+                <input type="text" name="contact_number" value="{{ contact_number }}" placeholder="{{ entry_contact_number }}" id="input-contact-number" class="form-control"/>
+                <div id="error-contact-number" class="invalid-feedback"></div>
+              </div>
+
+              <div class="col mb-3 required">
+                <label for="input-shipping-firstname" class="form-label">Address</label>
+                <input type="text" name="firstname" value="{{ firstname }}" placeholder="{{ entry_firstname }}" id="input-shipping-firstname" class="form-control"/>
+                <div id="error-shipping-firstname" class="invalid-feedback"></div>
+              </div>
+            </div>
           </div>
         {% endif %}
         <div class="col">
-          {% if shipping_method %}
-            <div id="checkout-shipping-method" class="mb-3">{{ shipping_method }}</div>
-          {% endif %}
-          <div id="checkout-payment-method" class="mb-4">{{ payment_method }}</div>
+          {#          {% if shipping_method %}#}
+          {#            <div id="checkout-shipping-method" class="mb-3">{{ shipping_method }}</div>#}
+          {#          {% endif %}#}
+          {#          <div id="checkout-payment-method" class="mb-4">{{ payment_method }}</div>#}
           <div id="checkout-confirm">{{ confirm }}</div>
+        </div>
+        <div class="text-start mb-3">
+          <button type="submit" id="button-shipping-address" class="btn btn-primary">{{ button_submit }}</button>
         </div>
       </div>
     </div>
