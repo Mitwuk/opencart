@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_items']                 = '%s item(s) - %s';
+$_['text_items']                 = '%s item(s)';
 $_['text_subscription']          = 'Subscription';
 $_['text_subscription_trial']    = '%s every %d %s(s) for %d payment(s) then ';
 $_['text_subscription_duration'] = '%s every %d %s(s) for %d payment(s)';
@@ -11,5 +11,5 @@ $_['text_semi_month']            = 'half-month';
 $_['text_month']                 = 'month';
 $_['text_year']                  = 'year';
 $_['text_no_results']            = 'Your shopping cart is empty!';
-$_['text_cart']                  = 'View Cart';
+$_['text_cart']                  = 'View Enquiry Basket';
 $_['text_checkout']              = 'Checkout';

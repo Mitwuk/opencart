@@ -6,8 +6,8 @@
         <td class="text-start">{{ column_name }}</td>
         <td class="text-start">{{ column_model }}</td>
         <td class="text-start">{{ column_quantity }}</td>
-        <td class="text-end">{{ column_price }}</td>
-        <td class="text-end">{{ column_total }}</td>
+{#        <td class="text-end">{{ column_price }}</td>#}
+{#        <td class="text-end">{{ column_total }}</td>#}
       </tr>
     </thead>
     <tbody>
@@ -38,8 +38,8 @@
               </div>
             </form>
           </td>
-          <td class="text-end">{{ product.price }}</td>
-          <td class="text-end">{{ product.total }}</td>
+{#          <td class="text-end">{{ product.price }}</td>#}
+{#          <td class="text-end">{{ product.total }}</td>#}
         </tr>
       {% endfor %}
       {% for voucher in vouchers %}
@@ -61,13 +61,13 @@
         </tr>
       {% endfor %}
     </tbody>
-    <tfoot id="checkout-total">
-      {% for total in totals %}
-        <tr>
-          <td colspan="5" class="text-end"><strong>{{ total.title }}</strong></td>
-          <td class="text-end">{{ total.text }}</td>
-        </tr>
-      {% endfor %}
-    </tfoot>
+{#    <tfoot id="checkout-total">#}
+{#      {% for total in totals %}#}
+{#        <tr>#}
+{#          <td colspan="5" class="text-end"><strong>{{ total.title }}</strong></td>#}
+{#          <td class="text-end">{{ total.text }}</td>#}
+{#        </tr>#}
+{#      {% endfor %}#}
+{#    </tfoot>#}
   </table>
 </div>
