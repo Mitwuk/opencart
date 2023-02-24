@@ -9,8 +9,7 @@
     <div id="content" class="col">{{ content_top }}
       <h1>{{ heading_title }}</h1>
       <div class="row">
-        {% if register or payment_address or shipping_address %}
-          <div class="col-md-7 mb-3">
+          <div id="shopping-check-out" class="col-md-7 mb-3">
             <div class="row row-cols-1 row-cols-md-2">
 
               <div class="col mb-3 required">
@@ -50,7 +49,6 @@
               </div>
             </div>
           </div>
-        {% endif %}
         <div class="col">
           {#          {% if shipping_method %}#}
           {#            <div id="checkout-shipping-method" class="mb-3">{{ shipping_method }}</div>#}
@@ -67,4 +65,39 @@
   </div>
   {{ column_right }}
 </div>
+<script type="text/javascript"><!--
+  $('#button-send').on('click', function (e) {
+    e.preventDefault();
+    var inputName = document.getElementById('input-name').value;
+    var inputCompanyName = document.getElementById('input-company-name').value;
+    var inputEmailAddress = document.getElementById('input-email-address').value;
+    var inputContactNumber = document.getElementById('input-contact-number').value;
+    var inputShippingAddress = document.getElementById('input-shipping-address').value;
+    var inputShippingDescription = document.getElementById('input-shipping-description').value;
+    const textStarts = document.getElementById('checkout-confirm').getElementsByClassName('text-start');
+    var productInfo = '';
+    for (let i = 1; i < textStarts.length; i++) {
+      productInfo = productInfo + textStarts[i].textContent.replace(" ", "").replace("\n", ",")
+    }
+    $.ajax({
+      url: 'index.php?route=mail/consumer&language=en-gb',
+      type: 'POST',
+      data: {
+        inputName: inputName,
+        inputCompanyName: inputCompanyName,
+        inputEmailAddress: inputEmailAddress,
+        inputContactNumber: inputContactNumber,
+        inputShippingAddress: inputShippingAddress,
+        inputShippingDescription: inputShippingDescription,
+        checkoutConfirm: productInfo
+      },
+      dataType: 'json',
+      success: function (data) {
+        alert('success!');
+        document.location.href='index.php?route=common/home&language=en-gb';
+      }
+    });
+  });
+  //--></script>
 {{ footer }}
+
