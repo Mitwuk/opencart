@@ -255,8 +255,11 @@ class FileManager extends \Opencart\System\Engine\Controller {
 			foreach ($files as $file) {
 				if (is_file($file['tmp_name'])) {
 					// Sanitize the filename
+					$chars = md5(uniqid(mt_rand(), true));
+					$uuid = substr($chars, 11, 29);
+					$index = strrpos($file['name'], '.');
+					$file['name'] = $uuid . substr($file['name'], $index);
 					$filename = preg_replace('[/\\?%*:|"<>]', '', basename(html_entity_decode($file['name'], ENT_QUOTES, 'UTF-8')));
-
 					// Validate the filename length
 					if ((oc_strlen($filename) < 4) || (oc_strlen($filename) > 255)) {
 						$json['error'] = $this->language->get('error_filename');

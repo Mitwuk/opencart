@@ -74,10 +74,27 @@
     var inputContactNumber = document.getElementById('input-contact-number').value;
     var inputShippingAddress = document.getElementById('input-shipping-address').value;
     var inputShippingDescription = document.getElementById('input-shipping-description').value;
-    const textStarts = document.getElementById('checkout-confirm').getElementsByClassName('text-start');
+    const textStarts = document.getElementById('check++++++out-confirm').getElementsByClassName('text-start');
     var productInfo = '';
+
+    var productModels = [];
+    var k = 1;
+    jQuery('.product-model').each(function(key,value){
+      productModels[k] = $(this).val();
+      k += 1;
+    });
+
+    var productImages = [];
+    var m = 1;
+    jQuery('.product-image').each(function(key,value){
+      productImages[m] = $(this).val();
+      m += 1;
+    });
+
     for (let i = 1; i < textStarts.length; i++) {
-      productInfo = productInfo + textStarts[i].textContent.replace(" ", "").replace("\n", ",")
+      productInfo = productInfo + '<br/>' + '产品编号: ' + productModels[i]
+      productInfo = productInfo + '<br/>' + textStarts[i].textContent.replace(" ", "").replace("\n", "")
+      productInfo = productInfo + '<br/>' + '<img src="'+productImages[i]+'">'
     }
     $.ajax({
       url: 'index.php?route=mail/consumer&language=en-gb',

@@ -18,6 +18,12 @@
             {% if product.subscription %}
               <br/>
               <small>{{ text_subscription }} {{ product.subscription }}</small>
+            {% endif %}
+            {% if product.model %}
+              <input type="hidden" class="product-model" value="{{ product.model }}">
+            {% endif %}
+            {% if product.image %}
+              <input type="hidden" class="product-image" value="{{ product.image }}">
             {% endif %}</td>
 {#          <td class="text-end">{{ product.total }}</td>#}
         </tr>
