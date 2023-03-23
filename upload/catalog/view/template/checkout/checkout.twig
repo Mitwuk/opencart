@@ -74,7 +74,7 @@
     var inputContactNumber = document.getElementById('input-contact-number').value;
     var inputShippingAddress = document.getElementById('input-shipping-address').value;
     var inputShippingDescription = document.getElementById('input-shipping-description').value;
-    const textStarts = document.getElementById('check++++++out-confirm').getElementsByClassName('text-start');
+    const textStarts = document.getElementById('checkout-confirm').getElementsByClassName('text-start');
     var productInfo = '';
 
     var productModels = [];
@@ -87,7 +87,7 @@
     var productImages = [];
     var m = 1;
     jQuery('.product-image').each(function(key,value){
-      productImages[m] = $(this).val();
+      productImages[m] = $(this).val().replace('-47x47', '-500x500');
       m += 1;
     });
 
