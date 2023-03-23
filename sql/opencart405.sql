@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 100427
 File Encoding         : 65001
 
-Date: 2023-03-20 22:36:30
+Date: 2023-03-23 17:29:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -271,7 +271,7 @@ CREATE TABLE `oc_cart` (
   `date_added` datetime NOT NULL,
   PRIMARY KEY (`cart_id`),
   KEY `cart_id` (`api_id`,`customer_id`,`session_id`,`product_id`,`subscription_plan_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of oc_cart
@@ -1053,9 +1053,9 @@ CREATE TABLE `oc_currency` (
 -- ----------------------------
 -- Records of oc_currency
 -- ----------------------------
-INSERT INTO `oc_currency` VALUES ('1', 'Pound Sterling', 'GBP', '£', '', '2', '0.84151980', '1', '2023-03-10 03:27:33');
-INSERT INTO `oc_currency` VALUES ('2', 'US Dollar', 'USD', '$', '', '2', '1.00000000', '1', '2023-03-10 03:27:33');
-INSERT INTO `oc_currency` VALUES ('3', 'Euro', 'EUR', '', '€', '2', '0.94750805', '1', '2023-03-10 03:27:32');
+INSERT INTO `oc_currency` VALUES ('1', 'Pound Sterling', 'GBP', '£', '', '2', '0.81701969', '1', '2023-03-21 02:56:17');
+INSERT INTO `oc_currency` VALUES ('2', 'US Dollar', 'USD', '$', '', '2', '1.00000000', '1', '2023-03-21 02:56:17');
+INSERT INTO `oc_currency` VALUES ('3', 'Euro', 'EUR', '', '€', '2', '0.93309695', '1', '2023-03-21 02:56:17');
 INSERT INTO `oc_currency` VALUES ('4', 'Hong Kong Dollar', 'HKD', 'HK$', '', '2', '7.84853359', '0', '2023-02-25 05:33:03');
 INSERT INTO `oc_currency` VALUES ('5', 'Indian Rupee', 'INR', '₹', '', '2', '82.76679281', '0', '2023-02-25 05:33:03');
 INSERT INTO `oc_currency` VALUES ('6', 'Russian Ruble', 'RUB', '', '₽', '2', '56.40360000', '0', '2018-02-16 12:00:00');
@@ -3015,13 +3015,13 @@ INSERT INTO `oc_product` VALUES ('51', '0', 'EL-001', '', '', '', '', '', '', ''
 INSERT INTO `oc_product` VALUES ('52', '0', 'TE-001', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Travel Essentials/Eye Mask/Multi-Function Eye Mask &amp; Pillow/c864eae4c76d103a0e42b.jpg', '0', '1', '0.0000', '0', '0', '2023-03-09', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-09 02:47:23', '2023-03-15 04:07:20');
 INSERT INTO `oc_product` VALUES ('53', '0', 'HH-002', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Household/Food Container/Lunch Box/186572ff8cc19c9eb043b.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 07:24:00', '2023-03-15 07:40:05');
 INSERT INTO `oc_product` VALUES ('54', '0', 'HH-003', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Household/Food Container/Lunch Box2/8125e03967f88afb16544.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 07:39:16', '2023-03-15 07:39:38');
-INSERT INTO `oc_product` VALUES ('55', '0', 'HH-004', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Household/Food Container/Fabric/e755a2d014aa279c19817.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 07:55:38', '2023-03-15 08:45:23');
-INSERT INTO `oc_product` VALUES ('56', '0', 'ST-001', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Pen/Metal Pen/f611f84b586a14003b83a.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:09:21', '2023-03-15 08:09:21');
-INSERT INTO `oc_product` VALUES ('57', '0', 'ST-002', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Pen/Metal Pen2/03ab65267c56ca2da0f50.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:13:18', '2023-03-15 08:13:18');
-INSERT INTO `oc_product` VALUES ('58', '0', 'ST-003', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Pen/Metal Pen3/a72a84537fc5a176f9452.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:17:22', '2023-03-15 08:17:22');
-INSERT INTO `oc_product` VALUES ('59', '0', 'ST-004', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Pen/Metal Pen4/8e59a59ae3a863a69e359.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:20:36', '2023-03-15 08:20:36');
-INSERT INTO `oc_product` VALUES ('60', '0', 'ST-005', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Lanyard/Neck Lanyard/b5f807ec1e20a5985ada7.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:56:00', '2023-03-15 08:56:49');
-INSERT INTO `oc_product` VALUES ('61', '0', 'HH-005', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Key Chain/Key Chain/7e20f06dbba4b952db488.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 09:13:01', '2023-03-15 09:13:01');
+INSERT INTO `oc_product` VALUES ('55', '0', 'HH-004', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Household/Food Container/Fabric/e755a2d014aa279c19817.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 07:55:38', '2023-03-21 04:26:59');
+INSERT INTO `oc_product` VALUES ('56', '0', 'ST-001', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Pen/Metal Pen/f611f84b586a14003b83a.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:09:21', '2023-03-21 04:31:30');
+INSERT INTO `oc_product` VALUES ('57', '0', 'ST-002', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Pen/Metal Pen2/03ab65267c56ca2da0f50.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:13:18', '2023-03-21 04:29:26');
+INSERT INTO `oc_product` VALUES ('58', '0', 'ST-003', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Pen/Metal Pen3/a72a84537fc5a176f9452.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:17:22', '2023-03-21 04:28:31');
+INSERT INTO `oc_product` VALUES ('59', '0', 'ST-004', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Pen/Metal Pen4/8e59a59ae3a863a69e359.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:20:36', '2023-03-21 04:26:08');
+INSERT INTO `oc_product` VALUES ('60', '0', 'ST-005', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Lanyard/Neck Lanyard/b5f807ec1e20a5985ada7.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 08:56:00', '2023-03-21 04:24:48');
+INSERT INTO `oc_product` VALUES ('61', '0', 'HH-005', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Key Chain/Key Chain/7e20f06dbba4b952db488.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 09:13:01', '2023-03-21 04:23:31');
 INSERT INTO `oc_product` VALUES ('62', '0', 'BG-001', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Bag/Back Pack/Back Pack/4fb302633a91eb33c23e2.jpg', '0', '1', '0.0000', '0', '0', '2023-03-15', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-15 09:22:09', '2023-03-15 09:22:09');
 INSERT INTO `oc_product` VALUES ('63', '0', 'HH-006', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Household/Tableware/Cutlery/a615322b9038acf4996d6.jpg', '0', '1', '0.0000', '0', '0', '2023-03-16', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-16 03:26:13', '2023-03-16 03:26:13');
 INSERT INTO `oc_product` VALUES ('64', '0', 'ST-006', '', '', '', '', '', '', '', '', '', '99999999', '6', 'catalog/Stationery/Note Book/A5 Note Book/c1d7d0023dcb12bd888c5.jpg', '0', '1', '0.0000', '0', '0', '2023-03-20', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2023-03-20 05:09:02', '2023-03-20 05:09:02');
@@ -3096,13 +3096,13 @@ INSERT INTO `oc_product_description` VALUES ('51', '1', 'International Adapter',
 INSERT INTO `oc_product_description` VALUES ('52', '1', 'Eye Mask &amp; Pillow', '&lt;p&gt;Material: Outside (cotton) / Refill ( foam)&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Black / White (optional)&lt;/p&gt;\r\n\r\n&lt;p&gt;Size: 240(L) x 140(W) x 130(H) mm&lt;/p&gt;', '', 'Eye Mask &amp; Pillow', '', '');
 INSERT INTO `oc_product_description` VALUES ('53', '1', 'Lunch box', '&lt;p&gt;Material: Wheat Straw&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Optional&lt;/p&gt;\r\n\r\n&lt;p&gt;Size:&amp;nbsp;198(L) x 198(W) x 63(H)&lt;/p&gt;\r\n\r\n&lt;p&gt;Capacity:&amp;nbsp;1100&amp;nbsp;ml&lt;/p&gt;', '', 'Lunch box', '', '');
 INSERT INTO `oc_product_description` VALUES ('54', '1', 'Lunch Box', '&lt;p&gt;Material: Wheat Straw&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Optional&lt;/p&gt;\r\n\r\n&lt;p&gt;Size: 195(L) X 120(W) X 70(H) mm&lt;/p&gt;\r\n\r\n&lt;p&gt;Capacity: 850ml&lt;/p&gt;', '', 'Lunch Box', '', '');
-INSERT INTO `oc_product_description` VALUES ('55', '1', 'Face Towel', '&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Material: microfiber&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Color: purple / yellow / green / blue&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Size:&amp;nbsp;&lt;font face=&quot;微软雅黑&quot;&gt;&lt;font style=&quot;line-height: 23.8px;&quot;&gt;&lt;span style=&quot;font-size:16px&quot;&gt;30 x 70 cm&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;', '', 'Face Towel', '', '');
-INSERT INTO `oc_product_description` VALUES ('56', '1', 'Metal Pen', '&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Material: metal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Color: Silver / Rose Gold&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Size:&amp;nbsp;&lt;font face=&quot;微软雅黑&quot;&gt;&lt;font style=&quot;line-height: 23.8px;&quot;&gt;&lt;span style=&quot;font-size:16px&quot;&gt;standard&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;&lt;/div&gt;', '', 'Metal Pen', '', '');
-INSERT INTO `oc_product_description` VALUES ('57', '1', 'Metal Pen', '&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Material: metal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Color: Optional&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Size:&amp;nbsp;&lt;font face=&quot;微软雅黑&quot;&gt;&lt;font style=&quot;line-height: 23.8px;&quot;&gt;&lt;span style=&quot;font-size:16px&quot;&gt;standard&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;', '', 'Metal Pen', '', '');
-INSERT INTO `oc_product_description` VALUES ('58', '1', 'Metal Pen', '&lt;div&gt;\r\n&lt;div&gt;Material: metal&lt;/div&gt;\r\n\r\n&lt;div&gt;Color: Optional&lt;/div&gt;\r\n\r\n&lt;div&gt;Size:&amp;nbsp;&lt;font face=&quot;微软雅黑&quot;&gt;&lt;font style=&quot;line-height: 23.8px;&quot;&gt;&lt;span style=&quot;font-size:16px&quot;&gt;standard&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;\r\n&lt;/div&gt;', '', 'Metal Pen', '', '');
-INSERT INTO `oc_product_description` VALUES ('59', '1', 'Metal Pen', '&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Material: metal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Color: Silver / Rose Gold&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Size:&amp;nbsp;&lt;font face=&quot;微软雅黑&quot;&gt;&lt;font style=&quot;line-height: 23.8px;&quot;&gt;&lt;span style=&quot;font-size:16px&quot;&gt;standard&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;', '', 'Metal Pen', '', '');
-INSERT INTO `oc_product_description` VALUES ('60', '1', 'Neck Lanyard', '&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Material: polyester&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Color: Custom made&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Size:&amp;nbsp;&lt;font face=&quot;微软雅黑&quot;&gt;&lt;font style=&quot;line-height: 23.8px;&quot;&gt;&lt;span style=&quot;font-size:16px&quot;&gt;standard&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;', '', 'Neck Lanyard', '', '');
-INSERT INTO `oc_product_description` VALUES ('61', '1', 'Key Chain', '&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Material: polyester / Felt&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Color: Custom made&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;\r\n\r\n&lt;div style=&quot;text-align:start; -webkit-text-stroke-width:0px&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;color:#000000&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;lucida Grande&amp;quot;, Verdana, &amp;quot;Microsoft YaHei&amp;quot;&quot;&gt;&lt;span style=&quot;font-style:normal&quot;&gt;&lt;span style=&quot;font-variant-ligatures:normal&quot;&gt;&lt;span style=&quot;font-variant-caps:normal&quot;&gt;&lt;span style=&quot;font-weight:400&quot;&gt;&lt;span style=&quot;letter-spacing:normal&quot;&gt;&lt;span style=&quot;orphans:2&quot;&gt;&lt;span style=&quot;text-transform:none&quot;&gt;&lt;span style=&quot;white-space:normal&quot;&gt;&lt;span style=&quot;widows:2&quot;&gt;&lt;span style=&quot;word-spacing:0px&quot;&gt;&lt;span style=&quot;background-color:#ffffff&quot;&gt;&lt;span style=&quot;text-decoration-thickness:initial&quot;&gt;&lt;span style=&quot;text-decoration-style:initial&quot;&gt;&lt;span style=&quot;text-decoration-color:initial&quot;&gt;Size:&amp;nbsp;&lt;font face=&quot;微软雅黑&quot;&gt;&lt;font style=&quot;line-height: 23.8px;&quot;&gt;&lt;span style=&quot;font-size:16px&quot;&gt;As request&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;', '', 'Key Chain', '', '');
+INSERT INTO `oc_product_description` VALUES ('55', '1', 'Face Towel', '&lt;p&gt;Material: microfiber&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: purple / yellow / green / blue&lt;/p&gt;\r\n\r\n&lt;p&gt;Size: 30 x 70 cm&lt;/p&gt;', '', 'Face Towel', '', '');
+INSERT INTO `oc_product_description` VALUES ('56', '1', 'Metal Pen', '&lt;p&gt;Material: metal&lt;/p&gt;\r\n&lt;p&gt;Color: Silver / Rose Gold&lt;/p&gt;\r\n&lt;p&gt;Size: standard&lt;/p&gt;', '', 'Metal Pen', '', '');
+INSERT INTO `oc_product_description` VALUES ('57', '1', 'Metal Pen', '&lt;p&gt;Material: metal&lt;/p&gt;\r\n&lt;p&gt;Color: Optional&lt;/p&gt;\r\n&lt;p&gt;Size: standard&lt;/p&gt;', '', 'Metal Pen', '', '');
+INSERT INTO `oc_product_description` VALUES ('58', '1', 'Metal Pen', '&lt;p&gt;Material: metal&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Optional&lt;/p&gt;\r\n\r\n&lt;p&gt;Size: standard&lt;/p&gt;', '', 'Metal Pen', '', '');
+INSERT INTO `oc_product_description` VALUES ('59', '1', 'Metal Pen', '&lt;p&gt;Material: metal&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Silver / Rose Gold&lt;/p&gt;\r\n\r\n&lt;p&gt;Size: standard&lt;/p&gt;', '', 'Metal Pen', '', '');
+INSERT INTO `oc_product_description` VALUES ('60', '1', 'Neck Lanyard', '&lt;p&gt;Material: polyester&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Custom made&lt;/p&gt;\r\n\r\n&lt;p&gt;Size: standard&lt;/p&gt;', '', 'Neck Lanyard', '', '');
+INSERT INTO `oc_product_description` VALUES ('61', '1', 'Key Chain', '&lt;p&gt;Material: polyester / Felt&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Custom made&lt;/p&gt;\r\n\r\n&lt;p&gt;Size:&amp;nbsp;As request&lt;/p&gt;', '', 'Key Chain', '', '');
 INSERT INTO `oc_product_description` VALUES ('62', '1', 'Back Pack', '&lt;p&gt;Material: Polyester / PU&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Optional&lt;/p&gt;\r\n\r\n&lt;p&gt;Size: 30(L) X 19(W) X 45(H) cm&lt;/p&gt;', '', 'Back Pack', '', '');
 INSERT INTO `oc_product_description` VALUES ('63', '1', 'Cutlery', '&lt;p&gt;Material: Stainless Steel&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Silver / Gold&lt;/p&gt;\r\n\r\n&lt;p&gt;Size: Standard&lt;/p&gt;', '', 'Cutlery', '', '');
 INSERT INTO `oc_product_description` VALUES ('64', '1', 'A5 Note Book', '&lt;p&gt;Material: PU / Cotton&lt;/p&gt;\r\n\r\n&lt;p&gt;Color: Optional&lt;/p&gt;\r\n\r\n&lt;p&gt;Size: Standard A5&lt;/p&gt;', '', 'A5 Note Book', '', '');
@@ -3162,7 +3162,7 @@ CREATE TABLE `oc_product_image` (
   `sort_order` int(3) NOT NULL DEFAULT 0,
   PRIMARY KEY (`product_image_id`),
   KEY `product_id` (`product_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2625 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=2643 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of oc_product_image
@@ -3254,22 +3254,6 @@ INSERT INTO `oc_product_image` VALUES ('2550', '53', 'catalog/Household/Food Con
 INSERT INTO `oc_product_image` VALUES ('2551', '53', 'catalog/Household/Food Container/Lunch Box/e007611043da3e239f576.jpg', '0');
 INSERT INTO `oc_product_image` VALUES ('2552', '53', 'catalog/Household/Food Container/Lunch Box/8dcee660d501b3773e296.jpg', '0');
 INSERT INTO `oc_product_image` VALUES ('2553', '53', 'catalog/Household/Food Container/Lunch Box/463fb4ccbc20c1d3e4db1.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2560', '56', 'catalog/Stationery/Pen/Metal Pen/5f6851949bb94ad46943b.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2561', '56', 'catalog/Stationery/Pen/Metal Pen/c16ca67ea278e134c7999.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2562', '56', 'catalog/Stationery/Pen/Metal Pen/1b5397bca0ab2222dad7b.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2563', '57', 'catalog/Stationery/Pen/Metal Pen2/9749224af589142ab4c54.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2564', '57', 'catalog/Stationery/Pen/Metal Pen2/6805ed34c465a13421a10.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2565', '58', 'catalog/Stationery/Pen/Metal Pen3/a4ff534d9c95461e42d53.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2566', '58', 'catalog/Stationery/Pen/Metal Pen3/a7ab94732f9cc8a9d5394.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2567', '59', 'catalog/Stationery/Pen/Metal Pen4/5d01dbba42e55966975cc.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2568', '59', 'catalog/Stationery/Pen/Metal Pen4/39cb9f0b487cbf18d3c97.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2578', '55', 'catalog/Household/Food Container/Fabric/0b6422edf7305c1f5709b.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2579', '55', 'catalog/Household/Food Container/Fabric/84e0323f2494b06c58da7.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2580', '55', 'catalog/Household/Food Container/Fabric/8f9452fcb89c9758e1f59.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2587', '60', 'catalog/Stationery/Lanyard/Neck Lanyard/9b60018822e27c19becb7.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2588', '60', 'catalog/Stationery/Lanyard/Neck Lanyard/7a80d4820be0a4be8ba7d.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2589', '61', 'catalog/Stationery/Key Chain/Key Chain/32f89fd840608522d95c7.jpg', '0');
-INSERT INTO `oc_product_image` VALUES ('2590', '61', 'catalog/Stationery/Key Chain/Key Chain/9cc0c485a0a85a3d2a776.jpg', '0');
 INSERT INTO `oc_product_image` VALUES ('2591', '62', 'catalog/Bag/Back Pack/Back Pack/006739f30dda98bfd6054.jpg', '0');
 INSERT INTO `oc_product_image` VALUES ('2592', '62', 'catalog/Bag/Back Pack/Back Pack/3dc7868337a4a65b8248d.jpg', '0');
 INSERT INTO `oc_product_image` VALUES ('2593', '62', 'catalog/Bag/Back Pack/Back Pack/7ce8e808177a626817bae.jpg', '0');
@@ -3304,6 +3288,22 @@ INSERT INTO `oc_product_image` VALUES ('2621', '69', 'catalog/Stationery/Note Bo
 INSERT INTO `oc_product_image` VALUES ('2622', '69', 'catalog/Stationery/Note Book/Wireless Charger Organizer/a825f8435671070a83820.jpg', '0');
 INSERT INTO `oc_product_image` VALUES ('2623', '70', 'catalog/Stationery/Note Book/Sticky Pad2/74e56592e3f3de7ea389f.jpg', '0');
 INSERT INTO `oc_product_image` VALUES ('2624', '70', 'catalog/Stationery/Note Book/Sticky Pad2/43c6745847757571740cf.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2627', '61', 'catalog/Stationery/Key Chain/Key Chain/32f89fd840608522d95c7.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2628', '61', 'catalog/Stationery/Key Chain/Key Chain/9cc0c485a0a85a3d2a776.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2629', '60', 'catalog/Stationery/Lanyard/Neck Lanyard/9b60018822e27c19becb7.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2630', '60', 'catalog/Stationery/Lanyard/Neck Lanyard/7a80d4820be0a4be8ba7d.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2631', '59', 'catalog/Stationery/Pen/Metal Pen4/5d01dbba42e55966975cc.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2632', '59', 'catalog/Stationery/Pen/Metal Pen4/39cb9f0b487cbf18d3c97.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2633', '55', 'catalog/Household/Food Container/Fabric/0b6422edf7305c1f5709b.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2634', '55', 'catalog/Household/Food Container/Fabric/84e0323f2494b06c58da7.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2635', '55', 'catalog/Household/Food Container/Fabric/8f9452fcb89c9758e1f59.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2636', '58', 'catalog/Stationery/Pen/Metal Pen3/a4ff534d9c95461e42d53.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2637', '58', 'catalog/Stationery/Pen/Metal Pen3/a7ab94732f9cc8a9d5394.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2638', '57', 'catalog/Stationery/Pen/Metal Pen2/9749224af589142ab4c54.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2639', '57', 'catalog/Stationery/Pen/Metal Pen2/6805ed34c465a13421a10.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2640', '56', 'catalog/Stationery/Pen/Metal Pen/5f6851949bb94ad46943b.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2641', '56', 'catalog/Stationery/Pen/Metal Pen/c16ca67ea278e134c7999.jpg', '0');
+INSERT INTO `oc_product_image` VALUES ('2642', '56', 'catalog/Stationery/Pen/Metal Pen/1b5397bca0ab2222dad7b.jpg', '0');
 
 -- ----------------------------
 -- Table structure for oc_product_option
@@ -3805,7 +3805,7 @@ CREATE TABLE `oc_seo_url` (
   PRIMARY KEY (`seo_url_id`),
   KEY `keyword` (`keyword`),
   KEY `query` (`key`,`value`)
-) ENGINE=InnoDB AUTO_INCREMENT=186 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=194 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of oc_seo_url
@@ -3896,17 +3896,10 @@ INSERT INTO `oc_seo_url` VALUES ('146', '0', '1', 'product_id', '54', 'lunchbox'
 INSERT INTO `oc_seo_url` VALUES ('147', '0', '1', 'product_id', '53', 'lunch box', '0');
 INSERT INTO `oc_seo_url` VALUES ('152', '0', '1', 'path', '67', 'stationery', '0');
 INSERT INTO `oc_seo_url` VALUES ('153', '0', '1', 'path', '67_68', 'stationery/pen', '0');
-INSERT INTO `oc_seo_url` VALUES ('154', '0', '1', 'product_id', '56', 'metal pen', '0');
-INSERT INTO `oc_seo_url` VALUES ('155', '0', '1', 'product_id', '57', 'metalpen', '0');
-INSERT INTO `oc_seo_url` VALUES ('156', '0', '1', 'product_id', '58', 'metal-pen', '0');
-INSERT INTO `oc_seo_url` VALUES ('157', '0', '1', 'product_id', '59', 'Metal_Pen', '0');
 INSERT INTO `oc_seo_url` VALUES ('159', '0', '1', 'path', '61_66', 'household/Fabric', '0');
 INSERT INTO `oc_seo_url` VALUES ('163', '0', '1', 'path', '61_69', 'household/towel', '0');
-INSERT INTO `oc_seo_url` VALUES ('164', '0', '1', 'product_id', '55', 'face towel', '0');
 INSERT INTO `oc_seo_url` VALUES ('165', '0', '1', 'path', '67_70', 'stationery/lanyard', '0');
-INSERT INTO `oc_seo_url` VALUES ('169', '0', '1', 'product_id', '60', 'neck lanyard', '0');
 INSERT INTO `oc_seo_url` VALUES ('170', '0', '1', 'path', '61_71', 'household/key chain', '0');
-INSERT INTO `oc_seo_url` VALUES ('171', '0', '1', 'product_id', '61', 'keychain', '0');
 INSERT INTO `oc_seo_url` VALUES ('173', '0', '1', 'path', '72_73', 'bag/back pack', '0');
 INSERT INTO `oc_seo_url` VALUES ('174', '0', '1', 'path', '72', 'bag', '0');
 INSERT INTO `oc_seo_url` VALUES ('175', '0', '1', 'product_id', '62', 'backpack', '0');
@@ -3920,6 +3913,13 @@ INSERT INTO `oc_seo_url` VALUES ('182', '0', '1', 'product_id', '67', 'wireless 
 INSERT INTO `oc_seo_url` VALUES ('183', '0', '1', 'product_id', '68', 'organizer2', '0');
 INSERT INTO `oc_seo_url` VALUES ('184', '0', '1', 'product_id', '69', 'wireless charger organizer', '0');
 INSERT INTO `oc_seo_url` VALUES ('185', '0', '1', 'product_id', '70', 'stickypad', '0');
+INSERT INTO `oc_seo_url` VALUES ('187', '0', '1', 'product_id', '61', 'keychain', '0');
+INSERT INTO `oc_seo_url` VALUES ('188', '0', '1', 'product_id', '60', 'neck lanyard', '0');
+INSERT INTO `oc_seo_url` VALUES ('189', '0', '1', 'product_id', '59', 'Metal_Pen', '0');
+INSERT INTO `oc_seo_url` VALUES ('190', '0', '1', 'product_id', '55', 'face towel', '0');
+INSERT INTO `oc_seo_url` VALUES ('191', '0', '1', 'product_id', '58', 'metal-pen', '0');
+INSERT INTO `oc_seo_url` VALUES ('192', '0', '1', 'product_id', '57', 'metalpen', '0');
+INSERT INTO `oc_seo_url` VALUES ('193', '0', '1', 'product_id', '56', 'metal pen', '0');
 
 -- ----------------------------
 -- Table structure for oc_session
@@ -3936,15 +3936,16 @@ CREATE TABLE `oc_session` (
 -- ----------------------------
 -- Records of oc_session
 -- ----------------------------
-INSERT INTO `oc_session` VALUES ('7b100ac983550ad83ce7412ca2', '{\"currency\":\"USD\"}', '2023-03-21 06:53:33');
+INSERT INTO `oc_session` VALUES ('61bd7ef30728b0939d3f3114c4', '{\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"7f700986ec41453fa1200c3225f9b418\"}', '2023-03-22 05:36:38');
+INSERT INTO `oc_session` VALUES ('6be9c5b0c143839e3fe46db4e5', '{\"currency\":\"USD\"}', '2023-03-22 02:56:44');
+INSERT INTO `oc_session` VALUES ('7b100ac983550ad83ce7412ca2', '{\"currency\":\"USD\"}', '2023-03-22 02:41:04');
 INSERT INTO `oc_session` VALUES ('8a5752f631f225a6c21a39e9e7', '{\"currency\":\"USD\"}', '2023-03-21 10:57:45');
-INSERT INTO `oc_session` VALUES ('98d69f79251e3d55d6b6cccf6d', '{\"currency\":\"USD\"}', '2023-03-21 06:54:08');
-INSERT INTO `oc_session` VALUES ('a268c8709686e6bf274c471ef0', '{\"currency\":\"USD\"}', '2023-03-21 10:58:36');
-INSERT INTO `oc_session` VALUES ('ab0e23aaeb22d26b33353824ac', '{\"currency\":\"USD\",\"review_token\":\"af196d99efef1ad61525f4d8dd98e4fd\"}', '2023-03-21 09:28:47');
-INSERT INTO `oc_session` VALUES ('b0ff991d0b0833a8888a2ba8c1', '{\"currency\":\"USD\"}', '2023-03-21 06:54:35');
-INSERT INTO `oc_session` VALUES ('dddf2d5a85c07187d1c21285ac', '{\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"7e3dbfcdcbde086bb5a6d6d3919dedf2\"}', '2023-03-21 05:49:13');
-INSERT INTO `oc_session` VALUES ('ea2713b910ccec9a55e04f29bb', '{\"currency\":\"USD\"}', '2023-03-21 06:55:26');
-INSERT INTO `oc_session` VALUES ('ee09955cf254cc4ed82522cfba', '{\"currency\":\"USD\"}', '2023-03-21 06:53:39');
+INSERT INTO `oc_session` VALUES ('a268c8709686e6bf274c471ef0', '{\"currency\":\"USD\",\"review_token\":\"a49745628abfa53e2a40b0ff9ea9d039\"}', '2023-03-22 09:50:35');
+INSERT INTO `oc_session` VALUES ('ab0e23aaeb22d26b33353824ac', '{\"currency\":\"USD\",\"review_token\":\"ce0e90d338837ddcac039e8157acc6f1\"}', '2023-03-22 09:59:18');
+INSERT INTO `oc_session` VALUES ('b81bfb13bd90c610db1328d67b', '{\"currency\":\"USD\"}', '2023-03-22 02:36:58');
+INSERT INTO `oc_session` VALUES ('d8b7c645987cd40ea3605c7465', '{\"currency\":\"USD\"}', '2023-03-22 02:56:15');
+INSERT INTO `oc_session` VALUES ('dbd862bcd9f3982ef5b3503490', '{\"currency\":\"USD\"}', '2023-03-22 10:09:31');
+INSERT INTO `oc_session` VALUES ('fd3d02f194f3d937f2377b9024', '{\"currency\":\"USD\"}', '2023-03-22 02:56:44');
 
 -- ----------------------------
 -- Table structure for oc_setting
@@ -3958,7 +3959,7 @@ CREATE TABLE `oc_setting` (
   `value` text NOT NULL,
   `serialized` tinyint(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`setting_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1102 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=1356 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of oc_setting
@@ -4050,133 +4051,133 @@ INSERT INTO `oc_setting` VALUES ('206', '0', 'report_marketing', 'report_marketi
 INSERT INTO `oc_setting` VALUES ('207', '0', 'report_customer_subscription', 'report_customer_subscription_status', '1', '0');
 INSERT INTO `oc_setting` VALUES ('208', '0', 'report_customer_subscription', 'report_customer_subscription_sort_order', '13', '0');
 INSERT INTO `oc_setting` VALUES ('212', '0', 'module_category', 'module_category_status', '1', '0');
-INSERT INTO `oc_setting` VALUES ('975', '0', 'config', 'config_meta_title', 'Your Store', '0');
-INSERT INTO `oc_setting` VALUES ('976', '0', 'config', 'config_meta_description', 'My Store', '0');
-INSERT INTO `oc_setting` VALUES ('977', '0', 'config', 'config_meta_keyword', '', '0');
-INSERT INTO `oc_setting` VALUES ('978', '0', 'config', 'config_logo', 'catalog/opencart-logo.png', '0');
-INSERT INTO `oc_setting` VALUES ('979', '0', 'config', 'config_theme', 'basic', '0');
-INSERT INTO `oc_setting` VALUES ('980', '0', 'config', 'config_layout_id', '4', '0');
-INSERT INTO `oc_setting` VALUES ('981', '0', 'config', 'config_name', 'Your Store', '0');
-INSERT INTO `oc_setting` VALUES ('982', '0', 'config', 'config_owner', 'Your Name', '0');
-INSERT INTO `oc_setting` VALUES ('983', '0', 'config', 'config_address', 'Address 1', '0');
-INSERT INTO `oc_setting` VALUES ('984', '0', 'config', 'config_geocode', '', '0');
-INSERT INTO `oc_setting` VALUES ('985', '0', 'config', 'config_email', '1209108465@qq.com', '0');
-INSERT INTO `oc_setting` VALUES ('986', '0', 'config', 'config_telephone', '123456789', '0');
-INSERT INTO `oc_setting` VALUES ('987', '0', 'config', 'config_image', '', '0');
-INSERT INTO `oc_setting` VALUES ('988', '0', 'config', 'config_open', '', '0');
-INSERT INTO `oc_setting` VALUES ('989', '0', 'config', 'config_comment', '', '0');
-INSERT INTO `oc_setting` VALUES ('990', '0', 'config', 'config_country_id', '222', '0');
-INSERT INTO `oc_setting` VALUES ('991', '0', 'config', 'config_zone_id', '3563', '0');
-INSERT INTO `oc_setting` VALUES ('992', '0', 'config', 'config_timezone', 'UTC', '0');
-INSERT INTO `oc_setting` VALUES ('993', '0', 'config', 'config_language', 'en-gb', '0');
-INSERT INTO `oc_setting` VALUES ('994', '0', 'config', 'config_language_admin', 'en-gb', '0');
-INSERT INTO `oc_setting` VALUES ('995', '0', 'config', 'config_currency', 'USD', '0');
-INSERT INTO `oc_setting` VALUES ('996', '0', 'config', 'config_currency_engine', 'ecb', '0');
-INSERT INTO `oc_setting` VALUES ('997', '0', 'config', 'config_currency_auto', '1', '0');
-INSERT INTO `oc_setting` VALUES ('998', '0', 'config', 'config_length_class_id', '1', '0');
-INSERT INTO `oc_setting` VALUES ('999', '0', 'config', 'config_weight_class_id', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1000', '0', 'config', 'config_product_description_length', '100', '0');
-INSERT INTO `oc_setting` VALUES ('1001', '0', 'config', 'config_pagination', '10', '0');
-INSERT INTO `oc_setting` VALUES ('1002', '0', 'config', 'config_product_count', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1003', '0', 'config', 'config_pagination_admin', '10', '0');
-INSERT INTO `oc_setting` VALUES ('1004', '0', 'config', 'config_product_report_status', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1005', '0', 'config', 'config_review_status', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1006', '0', 'config', 'config_review_purchased', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1007', '0', 'config', 'config_review_guest', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1008', '0', 'config', 'config_voucher_min', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1009', '0', 'config', 'config_voucher_max', '1000', '0');
-INSERT INTO `oc_setting` VALUES ('1010', '0', 'config', 'config_cookie_id', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1011', '0', 'config', 'config_gdpr_id', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1012', '0', 'config', 'config_gdpr_limit', '180', '0');
-INSERT INTO `oc_setting` VALUES ('1013', '0', 'config', 'config_tax', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1014', '0', 'config', 'config_tax_default', 'shipping', '0');
-INSERT INTO `oc_setting` VALUES ('1015', '0', 'config', 'config_tax_customer', 'shipping', '0');
-INSERT INTO `oc_setting` VALUES ('1016', '0', 'config', 'config_customer_online', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1017', '0', 'config', 'config_customer_online_expire', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1018', '0', 'config', 'config_customer_activity', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1019', '0', 'config', 'config_customer_search', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1020', '0', 'config', 'config_customer_group_id', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1021', '0', 'config', 'config_customer_group_display', '[\"1\"]', '1');
-INSERT INTO `oc_setting` VALUES ('1022', '0', 'config', 'config_customer_price', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1023', '0', 'config', 'config_telephone_display', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1024', '0', 'config', 'config_telephone_required', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1025', '0', 'config', 'config_login_attempts', '5', '0');
-INSERT INTO `oc_setting` VALUES ('1026', '0', 'config', 'config_account_id', '3', '0');
-INSERT INTO `oc_setting` VALUES ('1027', '0', 'config', 'config_invoice_prefix', 'INV-2023-00', '0');
-INSERT INTO `oc_setting` VALUES ('1028', '0', 'config', 'config_cart_weight', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1029', '0', 'config', 'config_checkout_guest', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1030', '0', 'config', 'config_checkout_payment_address', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1031', '0', 'config', 'config_checkout_shipping_address', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1032', '0', 'config', 'config_checkout_id', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1033', '0', 'config', 'config_order_status_id', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1034', '0', 'config', 'config_processing_status', '[\"5\",\"1\",\"2\",\"12\",\"3\"]', '1');
-INSERT INTO `oc_setting` VALUES ('1035', '0', 'config', 'config_complete_status', '[\"5\",\"3\"]', '1');
-INSERT INTO `oc_setting` VALUES ('1036', '0', 'config', 'config_fraud_status_id', '8', '0');
-INSERT INTO `oc_setting` VALUES ('1037', '0', 'config', 'config_api_id', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1038', '0', 'config', 'config_subscription_status_id', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1039', '0', 'config', 'config_subscription_active_status_id', '2', '0');
-INSERT INTO `oc_setting` VALUES ('1040', '0', 'config', 'config_subscription_expired_status_id', '6', '0');
-INSERT INTO `oc_setting` VALUES ('1041', '0', 'config', 'config_subscription_canceled_status_id', '4', '0');
-INSERT INTO `oc_setting` VALUES ('1042', '0', 'config', 'config_subscription_failed_status_id', '3', '0');
-INSERT INTO `oc_setting` VALUES ('1043', '0', 'config', 'config_subscription_denied_status_id', '5', '0');
-INSERT INTO `oc_setting` VALUES ('1044', '0', 'config', 'config_stock_display', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1045', '0', 'config', 'config_stock_warning', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1046', '0', 'config', 'config_stock_checkout', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1047', '0', 'config', 'config_affiliate_status', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1048', '0', 'config', 'config_affiliate_group_id', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1049', '0', 'config', 'config_affiliate_approval', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1050', '0', 'config', 'config_affiliate_auto', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1051', '0', 'config', 'config_affiliate_commission', '5', '0');
-INSERT INTO `oc_setting` VALUES ('1052', '0', 'config', 'config_affiliate_expire', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1053', '0', 'config', 'config_affiliate_id', '4', '0');
-INSERT INTO `oc_setting` VALUES ('1054', '0', 'config', 'config_return_status_id', '2', '0');
-INSERT INTO `oc_setting` VALUES ('1055', '0', 'config', 'config_return_id', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1056', '0', 'config', 'config_captcha', '', '0');
-INSERT INTO `oc_setting` VALUES ('1057', '0', 'config', 'config_captcha_page', '[\"review\",\"contact\"]', '1');
-INSERT INTO `oc_setting` VALUES ('1058', '0', 'config', 'config_image_category_width', '80', '0');
-INSERT INTO `oc_setting` VALUES ('1059', '0', 'config', 'config_image_category_height', '80', '0');
-INSERT INTO `oc_setting` VALUES ('1060', '0', 'config', 'config_image_thumb_width', '500', '0');
-INSERT INTO `oc_setting` VALUES ('1061', '0', 'config', 'config_image_thumb_height', '500', '0');
-INSERT INTO `oc_setting` VALUES ('1062', '0', 'config', 'config_image_popup_width', '800', '0');
-INSERT INTO `oc_setting` VALUES ('1063', '0', 'config', 'config_image_popup_height', '800', '0');
-INSERT INTO `oc_setting` VALUES ('1064', '0', 'config', 'config_image_product_width', '250', '0');
-INSERT INTO `oc_setting` VALUES ('1065', '0', 'config', 'config_image_product_height', '250', '0');
-INSERT INTO `oc_setting` VALUES ('1066', '0', 'config', 'config_image_additional_width', '74', '0');
-INSERT INTO `oc_setting` VALUES ('1067', '0', 'config', 'config_image_additional_height', '74', '0');
-INSERT INTO `oc_setting` VALUES ('1068', '0', 'config', 'config_image_related_width', '250', '0');
-INSERT INTO `oc_setting` VALUES ('1069', '0', 'config', 'config_image_related_height', '250', '0');
-INSERT INTO `oc_setting` VALUES ('1070', '0', 'config', 'config_image_compare_width', '90', '0');
-INSERT INTO `oc_setting` VALUES ('1071', '0', 'config', 'config_image_compare_height', '90', '0');
-INSERT INTO `oc_setting` VALUES ('1072', '0', 'config', 'config_image_wishlist_width', '47', '0');
-INSERT INTO `oc_setting` VALUES ('1073', '0', 'config', 'config_image_wishlist_height', '47', '0');
-INSERT INTO `oc_setting` VALUES ('1074', '0', 'config', 'config_image_cart_width', '47', '0');
-INSERT INTO `oc_setting` VALUES ('1075', '0', 'config', 'config_image_cart_height', '47', '0');
-INSERT INTO `oc_setting` VALUES ('1076', '0', 'config', 'config_image_location_width', '268', '0');
-INSERT INTO `oc_setting` VALUES ('1077', '0', 'config', 'config_image_location_height', '50', '0');
-INSERT INTO `oc_setting` VALUES ('1078', '0', 'config', 'config_mail_engine', 'smtp', '0');
-INSERT INTO `oc_setting` VALUES ('1079', '0', 'config', 'config_mail_parameter', '', '0');
-INSERT INTO `oc_setting` VALUES ('1080', '0', 'config', 'config_mail_smtp_hostname', 'ssl://smtp.qq.com', '0');
-INSERT INTO `oc_setting` VALUES ('1081', '0', 'config', 'config_mail_smtp_username', '1258636566@qq.com', '0');
-INSERT INTO `oc_setting` VALUES ('1082', '0', 'config', 'config_mail_smtp_password', 'vfooggrlbkzziefc', '0');
-INSERT INTO `oc_setting` VALUES ('1083', '0', 'config', 'config_mail_smtp_port', '465', '0');
-INSERT INTO `oc_setting` VALUES ('1084', '0', 'config', 'config_mail_smtp_timeout', '5', '0');
-INSERT INTO `oc_setting` VALUES ('1085', '0', 'config', 'config_mail_alert', '[\"order\"]', '1');
-INSERT INTO `oc_setting` VALUES ('1086', '0', 'config', 'config_mail_alert_email', '', '0');
-INSERT INTO `oc_setting` VALUES ('1087', '0', 'config', 'config_maintenance', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1088', '0', 'config', 'config_session_expire', '86400', '0');
-INSERT INTO `oc_setting` VALUES ('1089', '0', 'config', 'config_session_samesite', 'Strict', '0');
-INSERT INTO `oc_setting` VALUES ('1090', '0', 'config', 'config_seo_url', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1091', '0', 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', '0');
-INSERT INTO `oc_setting` VALUES ('1092', '0', 'config', 'config_compression', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1093', '0', 'config', 'config_security', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1094', '0', 'config', 'config_shared', '0', '0');
-INSERT INTO `oc_setting` VALUES ('1095', '0', 'config', 'config_encryption', '2d3f7565c9de4dc6d462769c2d60bb9349a77ec54cf809fb5771308a887c0c371b952f8f943dfd2b9867467a5163bd0e64f93a0fc3b1edccc96458ba74fae4b3658bff82e75dda621e6be3622b551d6c144bb7dfb945cece1729dc9cc6d8206a295ad6a74f8a9b5f30f06761deaad3873bdcaaf79b014a38b001df84ce87d147b595637984d8fcfac03044e63cf0db7761fa5cfede7f2b9f06311319d6637e02aafbc605f09ca02461fdad9948df9d6dba42c408507d6204a8ed1a7a01865d96e990ba3d56d7d5dc80ea4b4415307b81445dd17d4e336b69e4cbf8da1a40bb2b547cab9259a4c09bf21c9366d20ef270108a9cfbecee797f8c46874c9087b738', '0');
-INSERT INTO `oc_setting` VALUES ('1096', '0', 'config', 'config_file_max_size', '20', '0');
-INSERT INTO `oc_setting` VALUES ('1097', '0', 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\nwebp\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nmp4\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', '0');
-INSERT INTO `oc_setting` VALUES ('1098', '0', 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/webp\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-zip\r\napplication/x-zip-compressed\r\napplication/rar\r\napplication/x-rar\r\napplication/x-rar-compressed\r\napplication/octet-stream\r\naudio/mpeg\r\nvideo/mp4\r\nvideo/quicktime\r\napplication/pdf', '0');
-INSERT INTO `oc_setting` VALUES ('1099', '0', 'config', 'config_error_display', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1100', '0', 'config', 'config_error_log', '1', '0');
-INSERT INTO `oc_setting` VALUES ('1101', '0', 'config', 'config_error_filename', 'error.log', '0');
+INSERT INTO `oc_setting` VALUES ('1229', '0', 'config', 'config_meta_title', 'greenkeey', '0');
+INSERT INTO `oc_setting` VALUES ('1230', '0', 'config', 'config_meta_description', 'greenkeey', '0');
+INSERT INTO `oc_setting` VALUES ('1231', '0', 'config', 'config_meta_keyword', '', '0');
+INSERT INTO `oc_setting` VALUES ('1232', '0', 'config', 'config_logo', 'catalog/b4c7b2503b9a38a3272e4.jpg', '0');
+INSERT INTO `oc_setting` VALUES ('1233', '0', 'config', 'config_theme', 'basic', '0');
+INSERT INTO `oc_setting` VALUES ('1234', '0', 'config', 'config_layout_id', '4', '0');
+INSERT INTO `oc_setting` VALUES ('1235', '0', 'config', 'config_name', 'greenkeey', '0');
+INSERT INTO `oc_setting` VALUES ('1236', '0', 'config', 'config_owner', 'greenkeey', '0');
+INSERT INTO `oc_setting` VALUES ('1237', '0', 'config', 'config_address', '中国香港', '0');
+INSERT INTO `oc_setting` VALUES ('1238', '0', 'config', 'config_geocode', '', '0');
+INSERT INTO `oc_setting` VALUES ('1239', '0', 'config', 'config_email', 'zita@wankay.com', '0');
+INSERT INTO `oc_setting` VALUES ('1240', '0', 'config', 'config_telephone', '15989024342', '0');
+INSERT INTO `oc_setting` VALUES ('1241', '0', 'config', 'config_image', 'catalog/b4c7b2503b9a38a3272e4.jpg', '0');
+INSERT INTO `oc_setting` VALUES ('1242', '0', 'config', 'config_open', '', '0');
+INSERT INTO `oc_setting` VALUES ('1243', '0', 'config', 'config_comment', '', '0');
+INSERT INTO `oc_setting` VALUES ('1244', '0', 'config', 'config_country_id', '222', '0');
+INSERT INTO `oc_setting` VALUES ('1245', '0', 'config', 'config_zone_id', '3563', '0');
+INSERT INTO `oc_setting` VALUES ('1246', '0', 'config', 'config_timezone', 'UTC', '0');
+INSERT INTO `oc_setting` VALUES ('1247', '0', 'config', 'config_language', 'en-gb', '0');
+INSERT INTO `oc_setting` VALUES ('1248', '0', 'config', 'config_language_admin', 'en-gb', '0');
+INSERT INTO `oc_setting` VALUES ('1249', '0', 'config', 'config_currency', 'USD', '0');
+INSERT INTO `oc_setting` VALUES ('1250', '0', 'config', 'config_currency_engine', 'ecb', '0');
+INSERT INTO `oc_setting` VALUES ('1251', '0', 'config', 'config_currency_auto', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1252', '0', 'config', 'config_length_class_id', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1253', '0', 'config', 'config_weight_class_id', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1254', '0', 'config', 'config_product_description_length', '100', '0');
+INSERT INTO `oc_setting` VALUES ('1255', '0', 'config', 'config_pagination', '10', '0');
+INSERT INTO `oc_setting` VALUES ('1256', '0', 'config', 'config_product_count', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1257', '0', 'config', 'config_pagination_admin', '10', '0');
+INSERT INTO `oc_setting` VALUES ('1258', '0', 'config', 'config_product_report_status', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1259', '0', 'config', 'config_review_status', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1260', '0', 'config', 'config_review_purchased', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1261', '0', 'config', 'config_review_guest', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1262', '0', 'config', 'config_voucher_min', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1263', '0', 'config', 'config_voucher_max', '1000', '0');
+INSERT INTO `oc_setting` VALUES ('1264', '0', 'config', 'config_cookie_id', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1265', '0', 'config', 'config_gdpr_id', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1266', '0', 'config', 'config_gdpr_limit', '180', '0');
+INSERT INTO `oc_setting` VALUES ('1267', '0', 'config', 'config_tax', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1268', '0', 'config', 'config_tax_default', 'shipping', '0');
+INSERT INTO `oc_setting` VALUES ('1269', '0', 'config', 'config_tax_customer', 'shipping', '0');
+INSERT INTO `oc_setting` VALUES ('1270', '0', 'config', 'config_customer_online', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1271', '0', 'config', 'config_customer_online_expire', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1272', '0', 'config', 'config_customer_activity', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1273', '0', 'config', 'config_customer_search', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1274', '0', 'config', 'config_customer_group_id', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1275', '0', 'config', 'config_customer_group_display', '[\"1\"]', '1');
+INSERT INTO `oc_setting` VALUES ('1276', '0', 'config', 'config_customer_price', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1277', '0', 'config', 'config_telephone_display', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1278', '0', 'config', 'config_telephone_required', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1279', '0', 'config', 'config_login_attempts', '5', '0');
+INSERT INTO `oc_setting` VALUES ('1280', '0', 'config', 'config_account_id', '3', '0');
+INSERT INTO `oc_setting` VALUES ('1281', '0', 'config', 'config_invoice_prefix', 'INV-2023-00', '0');
+INSERT INTO `oc_setting` VALUES ('1282', '0', 'config', 'config_cart_weight', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1283', '0', 'config', 'config_checkout_guest', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1284', '0', 'config', 'config_checkout_payment_address', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1285', '0', 'config', 'config_checkout_shipping_address', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1286', '0', 'config', 'config_checkout_id', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1287', '0', 'config', 'config_order_status_id', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1288', '0', 'config', 'config_processing_status', '[\"5\",\"1\",\"2\",\"12\",\"3\"]', '1');
+INSERT INTO `oc_setting` VALUES ('1289', '0', 'config', 'config_complete_status', '[\"5\",\"3\"]', '1');
+INSERT INTO `oc_setting` VALUES ('1290', '0', 'config', 'config_fraud_status_id', '8', '0');
+INSERT INTO `oc_setting` VALUES ('1291', '0', 'config', 'config_api_id', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1292', '0', 'config', 'config_subscription_status_id', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1293', '0', 'config', 'config_subscription_active_status_id', '2', '0');
+INSERT INTO `oc_setting` VALUES ('1294', '0', 'config', 'config_subscription_expired_status_id', '6', '0');
+INSERT INTO `oc_setting` VALUES ('1295', '0', 'config', 'config_subscription_canceled_status_id', '4', '0');
+INSERT INTO `oc_setting` VALUES ('1296', '0', 'config', 'config_subscription_failed_status_id', '3', '0');
+INSERT INTO `oc_setting` VALUES ('1297', '0', 'config', 'config_subscription_denied_status_id', '5', '0');
+INSERT INTO `oc_setting` VALUES ('1298', '0', 'config', 'config_stock_display', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1299', '0', 'config', 'config_stock_warning', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1300', '0', 'config', 'config_stock_checkout', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1301', '0', 'config', 'config_affiliate_status', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1302', '0', 'config', 'config_affiliate_group_id', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1303', '0', 'config', 'config_affiliate_approval', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1304', '0', 'config', 'config_affiliate_auto', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1305', '0', 'config', 'config_affiliate_commission', '5', '0');
+INSERT INTO `oc_setting` VALUES ('1306', '0', 'config', 'config_affiliate_expire', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1307', '0', 'config', 'config_affiliate_id', '4', '0');
+INSERT INTO `oc_setting` VALUES ('1308', '0', 'config', 'config_return_status_id', '2', '0');
+INSERT INTO `oc_setting` VALUES ('1309', '0', 'config', 'config_return_id', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1310', '0', 'config', 'config_captcha', '', '0');
+INSERT INTO `oc_setting` VALUES ('1311', '0', 'config', 'config_captcha_page', '[\"review\",\"contact\"]', '1');
+INSERT INTO `oc_setting` VALUES ('1312', '0', 'config', 'config_image_category_width', '80', '0');
+INSERT INTO `oc_setting` VALUES ('1313', '0', 'config', 'config_image_category_height', '80', '0');
+INSERT INTO `oc_setting` VALUES ('1314', '0', 'config', 'config_image_thumb_width', '500', '0');
+INSERT INTO `oc_setting` VALUES ('1315', '0', 'config', 'config_image_thumb_height', '500', '0');
+INSERT INTO `oc_setting` VALUES ('1316', '0', 'config', 'config_image_popup_width', '800', '0');
+INSERT INTO `oc_setting` VALUES ('1317', '0', 'config', 'config_image_popup_height', '800', '0');
+INSERT INTO `oc_setting` VALUES ('1318', '0', 'config', 'config_image_product_width', '250', '0');
+INSERT INTO `oc_setting` VALUES ('1319', '0', 'config', 'config_image_product_height', '250', '0');
+INSERT INTO `oc_setting` VALUES ('1320', '0', 'config', 'config_image_additional_width', '74', '0');
+INSERT INTO `oc_setting` VALUES ('1321', '0', 'config', 'config_image_additional_height', '74', '0');
+INSERT INTO `oc_setting` VALUES ('1322', '0', 'config', 'config_image_related_width', '250', '0');
+INSERT INTO `oc_setting` VALUES ('1323', '0', 'config', 'config_image_related_height', '250', '0');
+INSERT INTO `oc_setting` VALUES ('1324', '0', 'config', 'config_image_compare_width', '90', '0');
+INSERT INTO `oc_setting` VALUES ('1325', '0', 'config', 'config_image_compare_height', '90', '0');
+INSERT INTO `oc_setting` VALUES ('1326', '0', 'config', 'config_image_wishlist_width', '47', '0');
+INSERT INTO `oc_setting` VALUES ('1327', '0', 'config', 'config_image_wishlist_height', '47', '0');
+INSERT INTO `oc_setting` VALUES ('1328', '0', 'config', 'config_image_cart_width', '47', '0');
+INSERT INTO `oc_setting` VALUES ('1329', '0', 'config', 'config_image_cart_height', '47', '0');
+INSERT INTO `oc_setting` VALUES ('1330', '0', 'config', 'config_image_location_width', '268', '0');
+INSERT INTO `oc_setting` VALUES ('1331', '0', 'config', 'config_image_location_height', '50', '0');
+INSERT INTO `oc_setting` VALUES ('1332', '0', 'config', 'config_mail_engine', 'smtp', '0');
+INSERT INTO `oc_setting` VALUES ('1333', '0', 'config', 'config_mail_parameter', '', '0');
+INSERT INTO `oc_setting` VALUES ('1334', '0', 'config', 'config_mail_smtp_hostname', 'ssl://smtp.qq.com', '0');
+INSERT INTO `oc_setting` VALUES ('1335', '0', 'config', 'config_mail_smtp_username', '1258636566@qq.com', '0');
+INSERT INTO `oc_setting` VALUES ('1336', '0', 'config', 'config_mail_smtp_password', 'vfooggrlbkzziefc', '0');
+INSERT INTO `oc_setting` VALUES ('1337', '0', 'config', 'config_mail_smtp_port', '465', '0');
+INSERT INTO `oc_setting` VALUES ('1338', '0', 'config', 'config_mail_smtp_timeout', '5', '0');
+INSERT INTO `oc_setting` VALUES ('1339', '0', 'config', 'config_mail_alert', '[\"order\"]', '1');
+INSERT INTO `oc_setting` VALUES ('1340', '0', 'config', 'config_mail_alert_email', '', '0');
+INSERT INTO `oc_setting` VALUES ('1341', '0', 'config', 'config_maintenance', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1342', '0', 'config', 'config_session_expire', '86400', '0');
+INSERT INTO `oc_setting` VALUES ('1343', '0', 'config', 'config_session_samesite', 'Strict', '0');
+INSERT INTO `oc_setting` VALUES ('1344', '0', 'config', 'config_seo_url', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1345', '0', 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', '0');
+INSERT INTO `oc_setting` VALUES ('1346', '0', 'config', 'config_compression', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1347', '0', 'config', 'config_security', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1348', '0', 'config', 'config_shared', '0', '0');
+INSERT INTO `oc_setting` VALUES ('1349', '0', 'config', 'config_encryption', '2d3f7565c9de4dc6d462769c2d60bb9349a77ec54cf809fb5771308a887c0c371b952f8f943dfd2b9867467a5163bd0e64f93a0fc3b1edccc96458ba74fae4b3658bff82e75dda621e6be3622b551d6c144bb7dfb945cece1729dc9cc6d8206a295ad6a74f8a9b5f30f06761deaad3873bdcaaf79b014a38b001df84ce87d147b595637984d8fcfac03044e63cf0db7761fa5cfede7f2b9f06311319d6637e02aafbc605f09ca02461fdad9948df9d6dba42c408507d6204a8ed1a7a01865d96e990ba3d56d7d5dc80ea4b4415307b81445dd17d4e336b69e4cbf8da1a40bb2b547cab9259a4c09bf21c9366d20ef270108a9cfbecee797f8c46874c9087b738', '0');
+INSERT INTO `oc_setting` VALUES ('1350', '0', 'config', 'config_file_max_size', '20', '0');
+INSERT INTO `oc_setting` VALUES ('1351', '0', 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\nwebp\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nmp4\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', '0');
+INSERT INTO `oc_setting` VALUES ('1352', '0', 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/webp\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-zip\r\napplication/x-zip-compressed\r\napplication/rar\r\napplication/x-rar\r\napplication/x-rar-compressed\r\napplication/octet-stream\r\naudio/mpeg\r\nvideo/mp4\r\nvideo/quicktime\r\napplication/pdf', '0');
+INSERT INTO `oc_setting` VALUES ('1353', '0', 'config', 'config_error_display', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1354', '0', 'config', 'config_error_log', '1', '0');
+INSERT INTO `oc_setting` VALUES ('1355', '0', 'config', 'config_error_filename', 'error.log', '0');
 
 -- ----------------------------
 -- Table structure for oc_startup
@@ -4543,7 +4544,7 @@ CREATE TABLE `oc_user` (
 -- ----------------------------
 -- Records of oc_user
 -- ----------------------------
-INSERT INTO `oc_user` VALUES ('1', '1', 'admin', '$2y$10$OfOe0f9eIMiaCXci7AdDZ.XxpaGSa79Z4l7R82nwaJbQDryPvUGuy', 'John', 'Doe', '1209108465@qq.com', '', '', '::1', '1', '2023-02-19 17:59:38');
+INSERT INTO `oc_user` VALUES ('1', '1', 'admin', '$2y$10$OfOe0f9eIMiaCXci7AdDZ.XxpaGSa79Z4l7R82nwaJbQDryPvUGuy', 'John', 'Doe', '1209108465@qq.com', '', '', '192.168.0.103', '1', '2023-02-19 17:59:38');
 
 -- ----------------------------
 -- Table structure for oc_user_authorize
@@ -4593,7 +4594,7 @@ CREATE TABLE `oc_user_login` (
   `user_agent` varchar(255) NOT NULL,
   `date_added` datetime NOT NULL,
   PRIMARY KEY (`user_login_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of oc_user_login
@@ -4640,6 +4641,7 @@ INSERT INTO `oc_user_login` VALUES ('39', '1', '::1', 'Mozilla/5.0 (Windows NT 1
 INSERT INTO `oc_user_login` VALUES ('40', '1', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', '2023-03-15 03:20:42');
 INSERT INTO `oc_user_login` VALUES ('41', '1', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', '2023-03-16 03:17:37');
 INSERT INTO `oc_user_login` VALUES ('42', '1', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', '2023-03-20 04:59:47');
+INSERT INTO `oc_user_login` VALUES ('43', '1', '192.168.0.103', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', '2023-03-21 02:37:17');
 
 -- ----------------------------
 -- Table structure for oc_vendor
