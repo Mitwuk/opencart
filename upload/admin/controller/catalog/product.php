@@ -539,7 +539,7 @@ class Product extends \Opencart\System\Engine\Controller {
 		if (!empty($product_info)) {
 			$data['quantity'] = $product_info['quantity'];
 		} else {
-			$data['quantity'] = 1;
+			$data['quantity'] = 99999999;
 		}
 
 		if (!empty($product_info)) {
