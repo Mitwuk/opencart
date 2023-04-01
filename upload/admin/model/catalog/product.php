@@ -868,6 +868,11 @@ class Product extends \Opencart\System\Engine\Model {
 		return $product_description_data;
 	}
 
+	public function getModel(array $data = []): int {
+		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "product` WHERE `model` LIKE '%" . $data['model'] . "'");
+		return $query->num_rows;
+	}
+
 	public function getCategories(int $product_id): array {
 		$product_category_data = [];
 

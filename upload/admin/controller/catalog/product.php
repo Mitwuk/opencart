@@ -320,6 +320,15 @@ class Product extends \Opencart\System\Engine\Controller {
 		return $this->load->view('catalog/product_list', $data);
 	}
 
+	public function getRandomString(): string {
+		$characters = '0123456789';
+		$randomString = '';
+		for ($i = 0; $i < 3; $i++) {
+			$randomString .= $characters[rand(0, strlen($characters) - 1)];
+		}
+		return $randomString;
+	}
+
 	public function form(): void {
 		$this->load->language('catalog/product');
 
@@ -1065,6 +1074,21 @@ class Product extends \Opencart\System\Engine\Controller {
 					$json['error']['option_' . $product_option['product_option_id']] = sprintf($this->language->get('error_required'), $product_option['name']);
 				}
 			}
+		}
+
+		if ($this->request->post['model'] && strpos($this->request->post['model'], '-') == false) {
+			while (true) {
+				$randomString = $this->getRandomString();
+				$Model = $this->request->post['model'] . '-' .$randomString;
+				$filter_data = [
+					'model' => $Model
+				];
+				$num_rows = $this->model_catalog_product->getModel($filter_data);
+				if ($num_rows == 0) {
+					break;
+				}
+			}
+			$this->request->post['model'] = $Model;
 		}
 
 		if ($this->request->post['product_seo_url']) {
